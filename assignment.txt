@@ -1,0 +1,21 @@
+Our names:
+IHIRWE Celia Joy
+IHOZO Raissa Flora
+UMURERWA Amelie Gift
+YEHOVAYIRE Moise
+
+Group 3 focuses on reading and modifying file content in PHP,
+covering several key implementations: displaying file content
+on a web page involves using functions like file_get_contents()
+to read the file into a string and then outputting it via echo 
+or print within HTML for browser rendering; searching in file content 
+can be done by loading the content and applying string functions such as
+strpos() or preg_match() to find specific terms or patterns; formatting file
+content entails processing the text, for instance, by trimming whitespace with 
+trim(), replacing multiple spaces using preg_replace(), or converting newlines
+to HTML breaks with nl2br() to improve readability; saving changes requires opening 
+the file in write mode with fopen(), writing modified content via fwrite(), 
+and ensuring the updates are persisted; closing files is essential for resource management,
+achieved by calling fclose() on the file handle after operations to prevent memory leaks or locks;
+and deleting files uses the unlink() function to permanently remove the file from the filesystem,
+with checks like file_exists() beforehand to avoid errors.
