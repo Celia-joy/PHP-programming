@@ -28,5 +28,23 @@ $s1->greet();
 $s2 = new Student("Pamella", 15);
 $s2->greet();
 
+class BankAccount{
+    public $owner;
+    private $balance;
 
+    public function __construct($owner, $balance){
+        $this->owner= $owner;
+        $this->balance= $balance;
+    }
+
+    public function deposit($amount){
+        $this->balance += $amount;
+    }
+    public function getBalance(){
+        return $this->balance;
+    }
+}
+$account = new BankAccount("Moise", 1000);
+$account->deposit(500);
+echo $account->getBalance();
 ?>
